@@ -16,5 +16,4 @@ class ColoredNoiseSampler:
             size     = (n_repeats, self.n_variables, self.timesteps)
         )
         samples = samples.transpose([0, 2, 1]) # (n_repeats, timestep, n_variables)
-        import ipdb; ipdb.set_trace()
         return samples
